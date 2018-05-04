@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Cigars_and_Cigarettes.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+<title>
+    <asp:ContentPlaceHolder ID="title" runat="server">
+
+    </asp:ContentPlaceHolder>
+</title>
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body runat="server">
+    <form id="form1" runat="server">
+<div id="wrapper">
+<div id="page">
+<div id="header">
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/hl1.png" />
+
+
+
+</div>
+
+            <div class="login">
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut1" />
+                    <asp:LoginName ID="LoginName1" runat="server" />
+            </div>
+<div id="nav">
+<a href="~/index.aspx" runat="server">Home</a>
+<a href="~/Product.aspx" runat="server">Products</a> 
+<a href="~/Login.aspx" runat="server">Login</a> 
+<a href="~/Contact.aspx" runat="server">Contact Us</a> 
+<a href="~/Register.aspx" runat="server">Register</a> 
+</div>
+
+<div id="content">
+<h2>
+    <asp:ContentPlaceHolder ID="Heading2" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    </h2>
+
+    <asp:ContentPlaceHolder ID="Content" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="Content2" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+
+</div>
+</div>
+</div>
+         </form>
+</body>
+
+</html>
